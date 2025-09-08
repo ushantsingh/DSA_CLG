@@ -13,7 +13,7 @@ int main()
             
             cout<<" ";
         }
-            for(int k=3;k>i;k--)
+            for(int k=5;k>i;k--)
             {
                 cout<<"*";
             }
