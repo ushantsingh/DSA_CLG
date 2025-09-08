@@ -11,8 +11,13 @@ int main()
         for(int j=5;j>i;j--)
         {
             
-            cout<<"*";
+            cout<<" ";
         }
+            for(int k=0;k<i;k++)
+            {
+                cout<<"*";
+            }
+        
         cout<<endl;
     }
     return 0;
