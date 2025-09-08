@@ -1,4 +1,4 @@
-// RIGHT HAND TRIANGLE  DECREMENT PATERN
+// PATERN
 
 #include<iostream>
 using namespace std;
@@ -8,12 +8,12 @@ int main()
     for(int i=0;i<5;i++)
     {
         //cout<<"\n*"<<endl;
-        for(int j=5;j>i;j--)
+        for(int j=0;j<=i;j++)
         {
             
             cout<<" ";
         }
-            for(int k=0;k<i;k++)
+            for(int k=3;k>i;k--)
             {
                 cout<<"*";
             }
