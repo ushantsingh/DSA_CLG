@@ -6,22 +6,22 @@
 #include<string.h>
 int main()
 {
-    int i,j;
+    
     char result;
-    char s[]="abcabcccbbbb";
-    int ln=strlen(s);
+    char str[]="abcabcccbbbb";
+    int ln=strlen(str);
     char freq[256]={0};
-    for(i=0;i<ln;i++)
+    for(int i=0;i<ln;i++)
     {
-        freq[s[i]]++;
+        freq[str[i]]++;
     }
     int max=0;
-    for(i=0,j=0;i<ln;i++)
+    for(int i=0,j=0;i<ln;i++)
     {
-        if(freq[s[i]]>max)
+        if(freq[str[i]]>max)
         {
-            max=freq[s[i]];
-            result=s[i];
+            max=freq[str[i]];
+            result=str[i];
         }
     }
     printf("Max number of charracter occuring in string is %c --> %d times",result,max);
