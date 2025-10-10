@@ -1,4 +1,4 @@
-// to find the max number of characters occuring in a string 
+// Wap to find the max number of characters occuring in a string 
 
 // Ex :-   abcabcbbbbcccc.   O/P:- b
 

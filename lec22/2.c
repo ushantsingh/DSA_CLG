@@ -1,4 +1,4 @@
-// to short an string using bubble short
+// Wap to short an string using bubble short
 
 #include <stdio.h>
 #include <string.h>
@@ -20,7 +20,7 @@ int main()
 
     // Print characters in increasing ASCII order
     for (int i = 0; i < 256; i++)
-cd     {
+    {
         while (freq[i] > 0)
         {
             printf("%c", i);
