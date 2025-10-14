@@ -1,3 +1,6 @@
+// Water tank question LeetCode Q11. 
+
+// CPP
 #include <stdio.h>
 #include <stdlib.h>
 int main()
@@ -7,9 +10,6 @@ int main()
     int j = 8;
 
     int maxArea = 0;
-  
- 
-
 
     while (i < j)
     {    int h;
@@ -40,3 +40,45 @@ int main()
     printf("Max Area = %d", maxArea);
     return 0;
 }
+
+
+// // JAVA
+
+// class Solution {
+//     public int maxArea(int[] height) {
+//         int i=0; int j=height.length-1;
+//         int maxArea=0;
+//         int h;
+
+//         while(i<j)
+//         {
+//             if(height[i]<height[j])
+//             {
+//                 h=height[i];
+//             }
+//             else
+//             {
+//                 h=height[j];
+//             }
+
+//             int width=j-i;
+
+//             int area=h*width;
+
+//             if(maxArea<area)
+//             {
+//                 maxArea=area;
+//             }
+
+//             if(height[i]<height[j])
+//             {
+//                 i++;
+//             }
+//             else
+//             {
+//                 j--;
+//             }
+//         }
+//         return maxArea;
+//     }
+// }
