@@ -4,7 +4,7 @@
 int main(){
     int letMax[6];
     // int height[12]={0,1,0,2,1,0,1,3,2,1,2};
-          int height[6]=        {4,2,0,3,2,5};
+    int height[6]={4,2,0,3,2,5};
     int rightMax[6];
     int water=0;
     letMax[0]=height[0];
