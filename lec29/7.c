@@ -18,7 +18,7 @@ int palindrome(int arr[], int start, int end) {
 }
 
 int main() {
-    int arr[] = {1, 2, 1};
+    int arr[] = {1, 2, 6};
     int n = sizeof(arr) / sizeof(arr[0]);
 
     int result = palindrome(arr, 0, n - 1);
