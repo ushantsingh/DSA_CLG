@@ -2,23 +2,20 @@
 
 #include<stdio.h>
 
-int checkSorted(int arr[]){
-    int i;
-    if (arr[i] > arr[i + 1])
-    {
-        return 0;
-        i++;
-    }
-    else 
-    {
+int checkSorted(int arr[],int i,int j){
+    if (i>=j){
         return 1;
     }
+    if(arr[i]>arr[i+1]){
+        return 0;
+    }
+    return checkSorted(arr, i + 1, j);
 }
 
 int main(){
-    int arr[] = {3,4,5,6,7};
+    int arr[] = {3,4,4,5,5,6,3};
     int n = sizeof(arr) / sizeof(arr[0]);
-    int result = checkSorted(arr);
+    int result = checkSorted(arr,0,n);
     if(result==1)
     {
         printf("Array is sorted ");
