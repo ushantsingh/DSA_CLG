@@ -9,19 +9,15 @@ int main()
     
     int len=strlen(str);
     printf("length is %d",len);
-    for(int i=0;i<len-1;i++)
-    {
+    for(int i=0;i<len-1;i++){
         int count=1;
-        if(str[i]!='0'&& str[i]!=' ')
-        {
-        for(int j=i+1;j<len-1;j++)
-        {
-        if(str[i]==str[j])
-        {
-            count++;
-            str[j]='0'; 
-        }
-        }
+        if(str[i]!='0'&& str[i]!=' '){
+            for(int j=i+1;j<len-1;j++){
+                if(str[i]==str[j]){
+                    count++;
+                    str[j]='0'; 
+                }
+            }
         if(count>1)
         printf("\n%c is %d times",str[i],count);
         else

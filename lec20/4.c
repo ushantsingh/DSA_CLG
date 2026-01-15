@@ -8,20 +8,15 @@ int main()
     char str[]="madam";
     int ln=strlen(str);
     int isTrue=1;
-    for(int i=0;i<ln/2;i++)
-    {
-        if(str[i]!=str[ln-i-1])
-        {
+    for(int i=0;i<ln/2;i++){
+        if(str[i]!=str[ln-i-1]){
             isTrue=0;
             break;
         }
     }
-    if(isTrue!=0)
-    {
+    if(isTrue!=0){
         printf("It is Palindrome");
-    }
-    else
-    {
+    }else{
         printf("Not Palindrome");
     }
 }

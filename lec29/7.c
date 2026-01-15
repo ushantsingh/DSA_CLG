@@ -7,12 +7,10 @@ int palindrome(int arr[], int start, int end) {
     if (start >= end) {
         return 1;
     }
-
     // If mismatch found
     if (arr[start] != arr[end]) {
         return 0;
     }
-
     // Recursive call
     return palindrome(arr, start + 1, end - 1);
 }

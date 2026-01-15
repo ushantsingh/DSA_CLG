@@ -20,8 +20,7 @@ int main(){
     {
         printf("Array is sorted ");
     }
-    else 
-    {
+    else {
         printf("Array is not sorted");
     }
 }
